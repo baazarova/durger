@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: fit-content;
+  border-radius: 5px;
+  /* border: 1px solid red; */
+  padding: 5px;
+  position: relative;
+}
+.card__image {
+  max-width: 60px;
+  margin-bottom: 4px;
+}
+.card__titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+}
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.card__title{
+    font-size: 14px;
+}
+.card__price{
+    font-size: 15px;
+    font-weight: bold;
+}
+.chip{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: lightslategray;
+}
+.container{
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.cards__wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+   row-gap: 25px;
+   padding: 10px 20px;
+  
+}
+.home__wrapper{
+    overflow: scroll;
+    max-height: 80vh;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: auto;
+}
