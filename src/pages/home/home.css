@@ -23,3 +23,6 @@ body{
     background-color: white;
     margin-left: auto;
 }
+.viewOrder__btn{
+    text-decoration: none;
+}

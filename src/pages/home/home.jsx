@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import items from "../../data/items.json";
 import { Cards } from "./components/cards/cards";
 import { Header } from "./components/header/header";
@@ -9,9 +10,7 @@ import "./home.css";
 export const Home = () => {
   const [count, setCount] = React.useState();
 
-  const viewOrder = ()=>{
-    window.location.replace('/order')
-  }
+ 
   return (
     <div className="container">
       <Header />
@@ -23,8 +22,8 @@ export const Home = () => {
         </div>
       </div>
       {useState(count) ? (
+        <Link to='/order' className="viewOrder__btn">
         <Button
-          onClick={viewOrder}
           variant="contained"
           sx={{
             bgcolor: "green",
@@ -36,6 +35,7 @@ export const Home = () => {
         >
           View order
         </Button>
+        </Link>
       ) : null}
     </div>
   );
