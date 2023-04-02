@@ -1,0 +1,87 @@
+[
+    {
+        "image" : "/images/burger.png",
+        "price" : 4.99,
+        "title" : "Burger",
+        "id" : 1
+        
+    },
+    {
+        "image" : "/images/cakee.avif",
+        "price" : 4.99,
+        "title" : "Cake",
+        "id" : 2
+        
+    },
+    {
+        "image" : "/images/coca.png",
+        "price" : 4.99,
+        "title" : "Coke",
+        "id" : 3
+        
+    },
+    {
+        "image" : "/images/Cookie.png",
+        "price" : 4.99,
+        "title" : "Cookie",
+        "id" : 4
+        
+    },
+    {
+        "image" : "/images/Donutt.png",
+        "price" : 4.99,
+        "title" : "Donut",
+        "id" : 5
+        
+    },
+    {
+        "image" : "/images/flan.png",
+        "price" : 4.99,
+        "title" : "Flan",
+        "id" : 6
+        
+    },
+    {
+        "image" : "/images/fries.png",
+        "price" : 4.99,
+        "title" : "Fries",
+        "id" : 7
+        
+    },
+    {
+        "image" : "/images/hotdoog.png",
+        "price" : 4.99,
+        "title" : "Hotdog",
+        "id" : 8
+        
+    },
+    {
+        "image" : "/images/icecreamm.png",
+        "price" : 4.99,
+        "title" : "Icecream",
+        "id" : 9
+        
+    },
+    {
+        "image" : "/images/pizza.png",
+        "price" : 4.99,
+        "title" : "Pizza",
+        "id" : 10
+        
+    },
+    {
+        "image" : "/images/popcornn.svg",
+        "price" : 4.99,
+        "title" : "Popcorn",
+        "id" : 11
+        
+    },
+    {
+        "image" : "/images/tacoss.png",
+        "price" : 4.99,
+        "title" : "Tacos",
+        "id" : 12
+        
+    }
+    
+]

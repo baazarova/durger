@@ -4,15 +4,19 @@
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  max-width: fit-content;
+  width: 90px;
   border-radius: 5px;
-  /* border: 1px solid red; */
   padding: 5px;
   position: relative;
 }
 .card__image {
   max-width: 60px;
   margin-bottom: 4px;
+}
+.img__wrapper{
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 .card__titleWrap {
   display: flex;
@@ -39,4 +43,27 @@
     position: absolute;
     top: 0;
     right: 0;
+    transform: translate(25%, -25%);
+}
+.btn__wrapper{
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 4px;
+}
+.btn{
+    height: 29px;
+    width: 38px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px 0 gray ;
+}
+.remove-btn{
+    background-color: red;
+
+}
+.plus-btn{
+    background-color: orange;
 }
