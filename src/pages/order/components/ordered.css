@@ -1,0 +1,18 @@
+.ordered{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 14px;
+}
+.ordered__img{
+    width: 40px;
+    margin-right: 18px;
+}
+.ordered__left{
+    display: flex;
+    align-items: center;
+}
+.ordered__title{
+    font-size: 16px;
+}

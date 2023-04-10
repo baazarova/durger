@@ -1,9 +1,36 @@
 import React, { useState } from "react";
 import "./cards.css";
 import { Button, Chip } from "@mui/material";
+import { useStateValue } from "../../../../stateProvider";
 
 const Cards = ({ image, title, price, id}) => {
+  const [state, dispatch] = useStateValue();
   const [count, setCount] = useState(0);
+
+
+  const addToBasket = ()=>{
+    setCount(count + 1);
+
+    dispatch({
+      type: 'ADD_TO_BASKET',
+      item: {
+        id: Math.random(),
+        title: title,
+        image: image,
+        price: price,
+      }
+    })
+  }
+
+  const removeFromBasket = () => {
+    setCount(count - 1);
+
+    dispatch({
+      type: 'REMOVE_FROM_BASKET',
+      id: id,
+    })
+  }
+
   const addButton = () => {
     setCount(count + 1);
   };
@@ -25,7 +52,7 @@ const Cards = ({ image, title, price, id}) => {
             <>
              
             <Button
-              onClick={addButton}
+              onClick={addToBasket}
               sx={{
                 bgcolor: "orange",
                 width: "90px",
@@ -52,10 +79,10 @@ const Cards = ({ image, title, price, id}) => {
             className="chip"
           />
             <div className="btn__wrapper">
-              <button onClick={removeButton} className="btn remove-btn">
+              <button onClick={removeFromBasket} className="btn remove-btn">
                 -
               </button>
-              <button className="btn plus-btn" onClick={addButton}>
+              <button className="btn plus-btn" onClick={addToBasket}>
                 +
               </button>
             </div>

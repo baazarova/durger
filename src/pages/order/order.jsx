@@ -5,9 +5,13 @@ import { Header } from "../home/components/header/header";
 import { Home } from "../home/home";
 import "./order.css";
 import { Ordered } from "./components/ordered";
-
+import { useStateValue } from "../../stateProvider";
 
 export const Order = () => {
+
+  const [{ basket }, dispatch] = useStateValue();
+
+
   return (
     <div className="container">
       <Header />
@@ -20,7 +24,14 @@ export const Order = () => {
             </Link>
           </div>
           <div className="ordered__products">
-            
+          {basket.map((item) => (
+            <Ordered
+              id={item.id}
+              image={item.image}
+              price={item.price}
+              title={item.title}
+            />
+          ))}
           </div>
           <div className="input__wrapper">
             <input
